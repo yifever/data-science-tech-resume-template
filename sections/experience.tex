@@ -8,20 +8,18 @@
 \subsection{{Researcher - Data Analysis  \hfill Sept 2017 --- }}
 \subtext{ATLAS Experiment | CERN \hfill Toronto, Canada \\ \small{ATLAS is a general-purpose particle physics experiment at the Large Hadron Collider at CERN designed to answer questions about the fundamental forces of nature. As of 2022, it has over 5000 collaborating members from 181 institutions in 42 countries.}}
 \begin{zitemize}
-\item Analysis goal was to reject the background only likelihood model at 99.99994\% confidence level, and to set limits on the strength of alternative signal likelihood models.
-\item Calibrate data objects to correct for biases and errors introduced in the data-taking process,
-\item Applied cuts to datasets according to the underlying physics to define phase spaces where the desired signal is enhanced, and
-\item Corrected for mis-modelling in physics simulation with data-driven methods. \\
-Software used include C++, python, Git, and ROOT (similar to R).
-\item Skimmed data sets for final analysis use over distributed computing resources, from  1000+ TB to less than 10 GB. \\
-Software used include the LHC computing grid (similar to AWS) and rucio (a scientific data management tool).
-\item Trained and used recursive neural networks as the final discriminant for signal separation, and
-\item Optimized NNs with feature engineering by constructing high-level variables and removing poorly modelled low-level variables.
-\item Performed likelihood maximization on a probability model with 3 observed data sets and 100+ nuisance parameters.
-\item Personally developed the software framework to apply cuts to datasets, took over dataset production over distributed computing tools, and lead the development of the statistical tools,
-\item Lead efforts to improve data uncertainties which improved the expected statistical significance from 99.4\% to over 99.9999999\% (4$\sigma$ to 6.5$\sigma$), a factor of over 1,000,000.
-\item Resolved a conflict in the probability model by identifying mis-modelling in NN inputs due to data calibration, and moved the team towards publication.
-\item Documented and edited over 500 pages of notes for internal use.
+\item Lead efforts in team of 10 to improve data quality and increased the expected statistical significance from 99.4\% to over 99.9999999\% (4$\sigma$ to 6.5$\sigma$)
+%item Analysis goal was to reject the background only likelihood model at 99.99994\% confidence level, and to set limits on the strength of alternative signal likelihood models.
+%\item Calibrated data objects to correct for detector biases and errors introduced in the data-taking process, 
+\item Corrected for mis-modelling in physics simulation with data-driven methods, and calibrated data objects to correct for biases and errors in the detector \\
+Software used include C++, python, Git, and ROOT (similar to R)
+\item Skim data sets for final analysis use over distributed computing resources, from  1000+ TB to less than 10 GB \\
+Software used include the LHC computing grid (similar to AWS) and rucio (a scientific data management tool)
+\item Optimized NNs with feature engineering by constructing high-level variables and removing poorly modelled low-level variables, increasing expected signifcance from 
+\item Lead a team of 5 scientists on the development on a probability model with 3 observed data sets and 100+ nuisance parameters
+%\item Personally developed the software framework to apply cuts to datasets, took over dataset production over distributed computing tools, and lead the development of the statistical tools
+%\item Personally debugged the probability model, and resolved a major conflict in the probability model by identifying mis-modelling in NN inputs due to data calibration, and moved the team towards publication
+\item Documented and edited over 500 pages of notes for internal use, and presented monthly status updates to lead physicists
 %\item Authored on all ATLAS publications since 2019, over 5000 (and counting)
 \end{zitemize}
 %====================
@@ -30,12 +28,10 @@ Software used include the LHC computing grid (similar to AWS) and rucio (a scien
 \subsection{{Developer - Detector Simulation  \hfill Aug 2017 -- Sept 2021 }}
 \subtext{ATLAS Experiment | CERN \hfill Toronto, Canada }
 \begin{zitemize}
-\item Used multi-thread physics engines to simulate detector response to charged particles,
-\item Built interface between in-house software framework and third-party physics libraries, and
-\item Optimized physics simulation time with a library of pre-processed detector responses as a function of input parameters. \\
-Software used include C++, python, Docker, and Git CI/CD.
-\item Validated physics simulation accuracy for each detector component by comparing a high- and low-level output variables.
-\item Improved simulation time by a factor of 10, from 28.1s/event to 2.82s/event. 
+\item Used a multi-thread physics engine (\href{https://github.com/acts-project/acts/}{acts}) to simulate detector response to charged particles
+\item Optimized physics simulation time with a library of pre-processed detector responses as a function of input parameters \\
+Software used include C++, python, Docker, Valgrind, and Git CI/CD
+\item Improved simulation time by a factor of 10, from 28.1s/event to 2.82s/event
 \end{zitemize}
 
 %====================
